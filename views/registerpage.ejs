@@ -1,0 +1,21 @@
+<h1>Sign up Page</h1>
+<h3> <%=typeof error == 'undefined' ? '' : error %></h3>
+<form action="/register" method="post">
+  <br/>
+  <br/>
+  <table style="width:500px">
+  <tr>
+    <td>EMAILID :</td>
+    <td><input name="username" type="text" style="width:200px"></td>
+  </tr>
+  <tr>
+    <td>PASSWORD :</td>
+    <td><input name="password" type="password" style="width:200px"></td>
+  </tr>
+  <tr>
+    <td>RETYPE PASSWORD :</td>
+    <td><input name="repassword" type="password" style="width:200px"></td>
+  </tr>
+</table>
+<div><input type="submit" class="button"></div>
+</form>

@@ -1,0 +1,64 @@
+<!doctype html>
+  <html class="no-js" lang="en">
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       <title><%=typeof requestData == 'undefined' ? 'Mayhem Store' : requestData.name%></title>
+       <link rel="stylesheet" href="/styles/mayhem.css">
+    <!--STYLES END-->
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div class="row">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text"><a href="/">Mayhem Store</a></li>
+            <li class="has-submenu">
+              <a href="#">Women</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="/products/P22190455">Product dummy</a></li>
+                <li><a href="/deleteproducts/P22190455">Delete dummy</a></li>
+                <li><a href="/treat-yourself-male-gift-card/p/p60062321" target="_blank">M&S PDP</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Kids</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <% if (req.user) { %>
+              <li><a href="/logout">Logout</a></li>
+              <li><a href="/myaccount">My Account</a></li>
+            <% } else { %>
+
+              <li><a href="/login">Login</a></li>
+              <li><a href="/register">Register</a></li>
+            <% } %>
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <%- body %>
+
+    <div class="row column">
+    <hr>
+    <ul class="menu">
+      <li>Mayhem Store</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li class="float-right">Copyright @Mayhem</li>
+    </ul>
+    </div>
+    <script src="/js/lib/jquery-2.1.4.min.js"></script>
+<script src="/js/dependencies/mayhem.js"></script>
+<script>
+      $(document).foundation();
+    </script>
+    <!--SCRIPTS END-->
+  </body>
+</html>
