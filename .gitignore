@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+*.log
+*.iml
+*.orig
+*.sublime-*
+/typings
+.vscode
+
+node_modules
+.tmp
