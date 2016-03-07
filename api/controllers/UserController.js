@@ -64,7 +64,7 @@ module.exports = {
         });
       } else {
         return res.json({
-          users
+          users: users
         });
       }
     });
@@ -84,7 +84,7 @@ module.exports = {
         });
       } else {
         return res.json({
-          users
+          users: users
         });
       }
     });

@@ -36,5 +36,9 @@
     "url": "git://github.com/hgupt6/testProject.git"
   },
   "author": "hgupt6",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "bcryptjs": "^2.3.0",
+    "cacheman-file": "^0.1.0"
+  }
 }
